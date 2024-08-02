@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 204, 197) !important;
+
+}
+.container {
+    width: 500px !important;
+    margin: 20px auto !important;
+}
+.Ha_todo_pp_text{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-width: 501px){
+    .container {
+        width: 400px !important;
+        margin: 20px auto !important;
+    }
+}
+.form {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+.input:focus , .add:focus{
+    outline: none;
+}
+.add {
+    border: none;
+    background-color: rgb(58, 149, 155);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.tasks {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+.tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+.tasks .task.done {
+    opacity: 0.5;
+    position: relative;
+}
+.task.done::after {
+    position: absolute;
+    content: "";
+}
+.tasks .task span { 
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* .tasks .task span :hover { 
+    border: 1px solid red !important;
+    background-color: white !;
+    color: #f44336 !important;
+} */
+.task1{
+    display: flex;
+    justify-content: space-around;
+    width: 30% !important;
+    /* background-color: #f44336; */
+}
+.delete-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 0px) !important;
+    height:60px;
+    /* margin: auto;
+    padding: 12px;
+    text-align: center; */
+    font-size: 16px;
+    color: white;
+    background: rgb(2, 137, 142);
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.logout_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 0px) !important;
+    height:60px;
+    /* margin: auto;
+    padding: 12px;
+    text-align: center; */
+    font-size: 16px;
+    color: white;
+    background: rgb(240, 58, 34);
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#task-div{
+    width: 100% !important;
+    margin-bottom: 10px;
+    height: 80px;
+    /* background-color: aqua; */
+}
+.h_updte{
+    font-size: small;
+    font-weight: 500;
+    background-color:greenyellow;
+    border: none;
+    border-radius: 3px;
+}
+.h_updte:hover{
+    transition: 0.5S;
+    font-weight: 800;
+   border: 1px solid greenyellow;
+   background-color: white;
+   color: greenyellow;
+}
+.h_edit{
+    font-size: small;
+    font-weight: 500;
+    background-color:greenyellow;
+    border: none;
+    border-radius: 3px;
+}
+.h_edit:hover{
+    transition: 0.5S;
+    font-weight: 800;
+   border: 1px solid greenyellow;
+   background-color: white;
+   color: greenyellow;
+}
+.para{
+    align-items: center;
+    width: 71%;
+    height: 31px;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-bottom: 0px;
+}
