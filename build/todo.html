@@ -15,17 +15,47 @@
     <div class="container">
         <h1 class="Ha_todo_pp_text">My TODO app</h1>
         <div class="form" id="form_data">
-            <input type="text" class="input" id="input_value"/>
-            <input id="add_todo_btn" type="submit" class="add" value="Add Task" />
+            <!-- New select tag for Pakistani cities -->
+            <input type="text" class="input" id="input_value" placeholder="Enter Name"/>
+            <div class="city-select">
+                <label for="cities">Select a city:</label>
+                <select id="cities" class="form-select">
+                    <option value="" disabled selected>Select a city</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="faisalabad">Faisalabad</option>
+                    <option value="multan">Multan</option>
+                </select>
+            </div>
+
+            <input id="add_todo_btn" type="submit" class="add" value="Add " />
+
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary city_btn">karachi</button>
+                <button type="button" class="btn btn-secondary city_btn">lahore</button>
+                <button type="button" class="btn btn-secondary city_btn">islamabad</button>
+                <button type="button" class="btn btn-secondary city_btn">faisalabad</button>
+                <button type="button" class="btn btn-secondary city_btn">multan</button>
+                <button type="button" class="btn btn-secondary reset_btn">Reset</button>
+            </div>
         </div>
+
         <div id="todo_listing" class="tasks">
-        
-
-
+            <!-- <div id="h_min_todo_div" class="task" data-id="${item.id}" data-index="${index}">
+                <input class="input_in" type="text" style="display: none;">
+                <p class="para">${item.text}</p>
+                <span class="city_css">city karachi</span>
+                <div class="task1">
+                    <span class="h_del" id="deleting">Delete</span>
+                    <button class="h_edit" id="editing">Edited</button>
+                    <button id="Update_editing" class="h_updte" style="display: none;">Update</button>
+                </div>
+            </div> -->
         </div>
         <div id="delete" class="delete-all">Delete all</div>
         <div id="logout" class="logout_btn">logout</div>
-
     </div>
 </body>
 <script type="module" src="./todo.js"></script>
